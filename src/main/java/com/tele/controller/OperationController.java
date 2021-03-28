@@ -1,5 +1,6 @@
 package com.tele.controller;
 
+import com.tele.dto.Operation;
 import com.tele.handler.ArithmeticOperationExceptionHandler;
 import com.tele.bl.ApiResult;
 import com.tele.bl.OperationEnum;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @RestController
 @RequestMapping("/operations")
@@ -64,5 +66,10 @@ public class OperationController {
             return ArithmeticOperationExceptionHandler.getResultFromError("Divistion by 0 is not allowed");
         }
         return resultBuilder.getResult(OperationEnum.DIVISION, val1, val2);
+    }
+
+    @GetMapping("/fetchall")
+    public List<Operation> fetchAllOperationsResults() {
+        return resultBuilder.fetchAllValues();
     }
 }

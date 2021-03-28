@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.List;
 
 @Component
 public class ResultBuilder {
@@ -14,6 +15,9 @@ public class ResultBuilder {
     @Autowired
     private OperationRepo operationRepo;
 
+    public List<Operation> fetchAllValues() {
+        return  operationRepo.findAll();
+    }
     public ApiResult getResult(OperationEnum operationEnum, BigDecimal val1, BigDecimal val2) {
         return ApiResult.withResult(fetchPeristedOperation(operationEnum, val1, val2));
     }
