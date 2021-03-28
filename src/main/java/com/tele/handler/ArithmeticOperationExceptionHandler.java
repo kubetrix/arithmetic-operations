@@ -1,6 +1,6 @@
 package com.tele.handler;
 
-import com.tele.model.ResultBuilder;
+import com.tele.bl.ResultBuilder;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;

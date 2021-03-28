@@ -10,13 +10,13 @@ public class ApiResult {
    private ApiResult() {
    }
 
-   static ApiResult withResult(BigDecimal resultMessage) {
+   public static ApiResult withResult(BigDecimal resultMessage) {
       ApiResult apiResult = new ApiResult();
       apiResult.result = resultMessage;
       return apiResult;
    }
 
-   static ApiResult withError(String errorMessage) {
+   public static ApiResult withError(String errorMessage) {
       ApiResult apiResult = new ApiResult();
       apiResult.error = errorMessage;
       return apiResult;

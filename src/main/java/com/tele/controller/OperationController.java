@@ -2,7 +2,7 @@ package com.tele.controller;
 
 import com.tele.model.ApiResult;
 import com.tele.model.OperationEnum;
-import com.tele.model.ResultBuilder;
+import com.tele.bl.ResultBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
