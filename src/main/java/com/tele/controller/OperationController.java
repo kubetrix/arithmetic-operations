@@ -1,5 +1,6 @@
 package com.tele.controller;
 
+import com.tele.handler.ArithmeticOperationExceptionHandler;
 import com.tele.model.ApiResult;
 import com.tele.model.OperationEnum;
 import com.tele.bl.ResultBuilder;
@@ -60,7 +61,7 @@ public class OperationController {
     @GetMapping("/divide")
     public ApiResult divide(@RequestParam BigDecimal val1, @RequestParam BigDecimal val2) {
         if (val2.equals(BigDecimal.ZERO)) {
-            return resultBuilder.getResultFromError("Divistion by 0 is not allowed");
+            return ArithmeticOperationExceptionHandler.getResultFromError("Divistion by 0 is not allowed");
         }
         return resultBuilder.getResult(OperationEnum.DIVISION, val1, val2);
     }

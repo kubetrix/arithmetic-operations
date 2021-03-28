@@ -20,9 +20,6 @@ public class ResultBuilder {
         return ApiResult.withResult(fetchPeristedOperation(operationEnum, val1, val2));
     }
 
-    public ApiResult getResultFromError(String errorMessage) {
-        return ApiResult.withError(errorMessage);
-    }
 
     private BigDecimal fetchPeristedOperation(OperationEnum operationEnum, BigDecimal val1, BigDecimal val2) {
         Operation operation = null;
