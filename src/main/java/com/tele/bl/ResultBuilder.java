@@ -2,8 +2,6 @@ package com.tele.bl;
 
 import com.tele.dto.Operation;
 import com.tele.dto.OperationRepo;
-import com.tele.model.ApiResult;
-import com.tele.model.OperationEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

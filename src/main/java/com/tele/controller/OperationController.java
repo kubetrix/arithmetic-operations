@@ -1,8 +1,8 @@
 package com.tele.controller;
 
 import com.tele.handler.ArithmeticOperationExceptionHandler;
-import com.tele.model.ApiResult;
-import com.tele.model.OperationEnum;
+import com.tele.bl.ApiResult;
+import com.tele.bl.OperationEnum;
 import com.tele.bl.ResultBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

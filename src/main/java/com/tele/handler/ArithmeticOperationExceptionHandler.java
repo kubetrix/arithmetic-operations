@@ -1,6 +1,6 @@
 package com.tele.handler;
 
-import com.tele.model.ApiResult;
+import com.tele.bl.ApiResult;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

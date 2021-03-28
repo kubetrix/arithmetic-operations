@@ -1,4 +1,4 @@
-package com.tele.model;
+package com.tele.bl;
 
 public enum  OperationEnum {
     ADDITION,
